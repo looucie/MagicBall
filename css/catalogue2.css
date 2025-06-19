@@ -1,0 +1,251 @@
+
+::-webkit-scrollbar {
+  height: 12px;
+  width: 12px;
+  background: #FFCFE8;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #A96187;
+  -webkit-border-radius: 1ex;
+  -webkit-box-shadow: 0px 1px 2px rgba(250, 250, 250, 0.75);
+}
+
+::-webkit-scrollbar-corner {
+  background: #ffffff;
+}
+/*head*/
+header {
+    background-color: #171F31;
+    margin-top: -8px;
+    margin-left: -8px;
+    margin-right: -8px;
+    height: 110px;
+}
+
+.accueil {
+    width: 85px;
+    height: 73px;
+    margin-left: 157px;
+    margin-top: 20px;
+}
+
+.collection {
+  width: 100px;
+  height: 82px;
+  padding: 10px;
+  background-color: #F8A5D1;
+  border-radius: 30px;
+  margin-left: 33px;
+  margin-top: 15px;
+  position: absolute;
+  font-family: "Jersey 10", serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 25px;
+  border:none;
+
+}
+
+.active, .collection:hover {
+  background-color: #A96187;
+}
+
+.content {
+  padding: 18px 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #c3c2c2;
+  position: absolute;
+  top: 110px;
+  right: 0px;
+  left:0px;
+}
+
+
+form {
+  width: 400px;
+  position: absolute;
+  right: 200px;
+  top: 45px;
+}
+input {
+  padding: 4px 10px;
+  border: 0;
+  font-size: 16px;
+}
+.search {
+  width: 75%;
+}
+.submit {
+  width: 40px;
+  height: 26px;
+  background-color: #979696;
+  top: 0px;
+  position: absolute;
+}
+.profil {
+  position: absolute;
+  width: 75px;
+  height: 73px;
+  right: 44px;
+  top: 20px;
+}
+.card2 {
+  color: #202B43;
+  border-radius: 35px;
+  border: solid #171F31 1px;
+  width: 254px;
+  height: 322px;
+  font-family: "Jaro", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  position: relative;
+}
+.remove {
+  padding: 10px 25px;
+  border-radius: 20px;
+  border:none;
+  font-size: 15px;
+  background-color: #8795b7;
+  text-decoration: none;
+  font-family: "Jersey 10", serif;
+  font-weight: 500;
+  font-style: normal;
+  position: absolute;
+  bottom: 25px; 
+  left: 55%; 
+}
+.name {
+  padding: 5px 20px;
+  border-radius: 20px;
+  border:none;
+  font-size: 15px;
+  background-color: #727c80;
+  text-decoration: none;
+  font-family: "Jersey 10", serif;
+  font-weight: 500;
+  font-style: normal;
+  position: absolute;
+  bottom: 75px; 
+  left: 64%; 
+}
+.active, .name:hover {
+  background-color: #b4b5b8;
+}
+.active, .remove:hover {
+  background-color: #171F31;
+}
+
+/*main*/
+
+
+.cards-container {
+  display: grid;
+  grid-template-columns: 25% 25% 25%;
+  margin-top: 30px;
+  margin-left: 3%;
+  justify-content: space-evenly;
+}
+.card {
+  color: #202B43;
+  border-radius: 35px;
+  border: solid #A96187 1px;
+  width: 254px;
+  height: 322px;
+  font-family: "Jaro", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  position: relative;
+}
+
+h1 {
+  text-align: center;
+  font-family: "Jersey 10", serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 40px;
+  color: #202B43;
+}
+
+.pokemons {
+  width: 200px;
+  margin-left: 25px;
+}
+
+h3,p {
+  margin-left: 30px;
+  font-size: 20px;
+  margin-top: 15px;
+}
+.ajout {
+  padding: 10px 25px;
+  border-radius: 20px;
+  border:none;
+  font-size: 15px;
+  background-color: #F8A5D1;
+  text-decoration: none;
+  font-family: "Jersey 10", serif;
+  font-weight: 500;
+  font-style: normal;
+  position: absolute;
+  bottom: 70px; 
+  left: 55%; 
+}
+.active, .ajout:hover {
+  background-color: #A96187;
+}
+
+.autres {
+  right: 50px;
+  color: #A96187;
+  position: absolute;
+}
+
+/*footer*/
+footer{
+  grid-row: 3 / 4;
+  grid-column: 1 / 3;
+  background-color: #202B43;
+  margin-bottom: -8px;
+  margin-left: -8px;
+  margin-right: -8px;
+  height: 240px;
+  position: relative;
+}
+.youtube {
+  width: 50px;
+  left: 100px;
+  top: 40px;
+  position: absolute;
+}
+.insta {
+  width: 47px;
+  left: 100px;
+  top: 90px;
+  position: absolute;
+}
+.x-icon {
+  width: 70px;
+  top: 140px;
+  left: 88px;
+  position: absolute;
+}
+.logo {
+  width: 192px;
+  right: 100px;
+  top: 90px;
+  position: absolute;
+}
+.texte {
+  position: absolute;
+  color: white;
+  font-family: "Jaro", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  right: 400px;
+  top: 70px;
+}
