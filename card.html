@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&family=Jersey+10&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="pocon.ico">
+    <title>Catamagie</title>
+    <link rel="stylesheet" href="css/pokecard.css">
+</head>
+<body>
+    <header>
+        <button type="button" class="collection">
+          Capturés
+        </button>
+        <div class="content">
+          <h1>Pokelection</h1>
+          <div class="cards-container" id="collect"></div>
+        </div>
+        <a href="accueil.html">
+          <img src="pokecon.png" class="accueil">
+        </a>
+        <form>
+          <input type="text" name=text class="search" placeholder="Recherchez vos pokemon !"/>
+          <input type="submit" name="submit" class="submit" value="🔎" />
+        </form>
+        <img src="img/pfp.avif" class="profil">
+    </header>
+    <section>
+    <main id="carte">
+    </main>
+    <br><br><br>
+    <footer>
+      <a href="https://www.youtube.com/@PokemonOfficielFR"><img src="img/Youtube_logo.png" class="youtube"></a>
+      <a href="https://www.instagram.com/pokemon/"><img src="img/Instagram_icon.png" class="insta"></a>
+      <a href="https://x.com/Pokemon?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor&mx=2"><img src="img/x.webp" class="x-icon"></a>
+      <div class="texte">
+        <p>BUT MMI 2025</p>
+        <p>IUT LANNION</p>
+      </div>
+      <img src="img/logo iut.png" class="logo">
+    </footer>
+  </section>
+</body>
+
+<script type="text/javascript" src="collection.js"></script>
+<script type="text/javascript" src="pokemon_api.js"></script>
+<script type="text/javascript" src="picogna_pokemon_extended_v2.js"></script>
+
+<script>
+    var coll = document.getElementsByClassName("collection");
+    var mainContent = document.querySelector("section");
+    var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+
+    if (mainContent.style.display === "none") {
+          mainContent.style.display = "block"; 
+        } else {
+          mainContent.style.display = "none"; 
+        }
+  });
+  
+}
+
+        
+
+listPokemonDetail("carte", pokemonData);
+listAllPokemonFromCollection("collect",collectionData,pokemonData);
+
+</script>
+</html>
